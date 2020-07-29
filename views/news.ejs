@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include("blocks/header.ejs") %>
+    <h1>Новости <%= newsId %></h1>
+    <h1>ЗаГоловок <%= obj.title %></h1>
+    <h1>Id <%= obj.id %></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe, numquam doloremque eius minima atque quas illum accusamus consequuntur deserunt cumque facere ab earum nam eligendi, totam labore obcaecati culpa? Ab iure eum, eligendi officia expedita doloremque veritatis dolore id nemo, magnam nam voluptatum harum dolorem neque ad molestias veniam deleniti! Deleniti sunt doloremque quis optio voluptatum sit dolore.</p>
+    <ul>
+        <% obj.paragraphs.forEach(function(item){ %>
+        <li><%= item %></li>
+        <% }); %>
+    </ul>
+
+</body>
+</html>
